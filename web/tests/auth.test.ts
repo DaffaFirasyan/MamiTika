@@ -1,6 +1,27 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { assertAdminIdentity, createBetterAuthOptions, AdminAccessError } from "../src/lib/auth-policy.ts";
+import { createAuthPoolConfig } from "../src/lib/auth-pool-config.ts";
+
+test("auth pool uses the configured CA and ignores connection-string SSL file/mode overrides", () => {
+  const caCertificate = "-----BEGIN CERTIFICATE-----\nfixture\n-----END CERTIFICATE-----";
+  const config = createAuthPoolConfig(
+    "postgresql://mamitika_auth:fixture@db.example.test:5432/postgres?sslmode=disable&sslrootcert=C%3A%2Flocal%2Froot.crt&sslcert=client.crt&sslkey=client.key&application_name=mamitika",
+    caCertificate,
+  );
+  const url = new URL(config.connectionString);
+
+  assert.deepEqual(config.ssl, { ca: caCertificate, rejectUnauthorized: true });
+  assert.equal(url.searchParams.has("sslmode"), false);
+  assert.equal(url.searchParams.has("sslrootcert"), false);
+  assert.equal(url.searchParams.has("sslcert"), false);
+  assert.equal(url.searchParams.has("sslkey"), false);
+  assert.equal(url.searchParams.get("application_name"), "mamitika");
+});
+
+test("auth pool rejects a malformed configured CA instead of weakening TLS", () => {
+  assert.throws(() => createAuthPoolConfig("postgresql://localhost/postgres", "not a certificate"), /DATABASE_SSL_CA/);
+});
 
 test("Better Auth policy enables password login and disables public signup/providers/reset", () => {
   const options = createBetterAuthOptions("https://mamitika.example", true);

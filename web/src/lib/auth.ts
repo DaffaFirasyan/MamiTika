@@ -4,6 +4,7 @@ import { PostgresDialect } from "kysely";
 import { Pool } from "pg";
 import { headers } from "next/headers";
 import { AdminAccessError, assertAdminIdentity, createBetterAuthOptions } from "./auth-policy";
+import { createAuthPoolConfig } from "./auth-pool-config";
 
 function requiredEnvironment(name: string, minLength = 1): string {
   const value = process.env[name];
@@ -23,7 +24,9 @@ if (parsedBaseURL.username || parsedBaseURL.password || parsedBaseURL.pathname !
 
 const secret = requiredEnvironment("BETTER_AUTH_SECRET", 32);
 const connectionString = requiredEnvironment("DATABASE_URL");
-const pool = new Pool({ connectionString, max: 4, idleTimeoutMillis: 30_000 });
+const caCertificate = process.env.DATABASE_SSL_CA?.trim();
+if (process.env.NODE_ENV === "production" && !caCertificate) throw new Error("DATABASE_SSL_CA is not configured correctly.");
+const pool = new Pool({ ...createAuthPoolConfig(connectionString, caCertificate), max: 4, idleTimeoutMillis: 30_000 });
 
 export const authDatabase = pool;
 export const auth = betterAuth({

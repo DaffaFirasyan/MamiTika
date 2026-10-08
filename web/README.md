@@ -4,7 +4,7 @@
 
 1. Create `web/.env.local` from `.env.example` and fill values for a local/development database and Supabase project. Never use production credentials for local checks.
 2. Start the local Supabase stack and apply migrations with `npx supabase start` then `npx supabase migration up --local`.
-3. Set a password for the restricted PostgreSQL role `mamitika_auth` out of band, then use that role in `DATABASE_URL`. The role should only access `app_auth` tables.
+3. Set a password for the restricted PostgreSQL role `mamitika_auth` out of band, then use that role in `DATABASE_URL`. The role should only access `app_auth` tables. For Netlify's hosted runtime, set the root CA PEM downloaded from the same Supabase development project in the site-only, secret `DATABASE_SSL_CA` variable for the `production` context and Build/Functions/Runtime scopes. The app verifies both certificate chain and hostname. When this variable is set, SSL parameters in `DATABASE_URL` are ignored so a machine-local `sslrootcert` path cannot override the runtime TLS configuration. Keep the CA out of source, logs, and chat.
 4. Create the single owner interactively with `npm run create:owner`. Set `OWNER_EMAIL` and optional `OWNER_NAME` in `.env.local`; enter the password only at the hidden terminal prompt. Copy the printed UUID into `ADMIN_USER_ID` in `.env.local` and restart the app.
 5. Run `npm run dev` and open `http://localhost:3000`.
 
