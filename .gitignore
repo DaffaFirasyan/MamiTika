@@ -1,0 +1,12 @@
+/web/node_modules/
+/web/.next/
+/web/out/
+/web/backups/
+/web/.netlify/
+/web/supabase/.temp/
+/web/supabase/.branches/
+/.netlify/
+/web/.env*
+!/web/.env.example
+/web/output/
+/web/supabase-prod-ca-2021.crt

@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "productSlug": "roti-sobek-coklat-lumer",
+      "sourceFile": "images/16-image.jpg",
+      "alt": "Roti sobek dengan isian cokelat terlihat pada potongannya.",
+      "verified": true,
+      "notes": "Bentuk roti sobek dan isian cokelat tampak pada foto."
+    },
+    {
+      "productSlug": "roti-sobek-keju",
+      "sourceFile": "images/11-image.jpg",
+      "alt": "Roti berbentuk loaf dengan topping keju.",
+      "verified": false,
+      "notes": "Foto tampak seperti roti bertopping keju, tetapi tidak dapat dipastikan ini SKU sobek keju; minta pemilik mengonfirmasi."
+    },
+    {
+      "productSlug": "roti-sisir-polos",
+      "sourceFile": "images/23-image.jpg",
+      "alt": "Roti loaf polos yang tersusun dalam beberapa bagian.",
+      "verified": true,
+      "notes": "Tampilan loaf polos sesuai bentuk roti sisir; tetap minta pemilik meninjau sebelum publikasi."
+    },
+    {
+      "productSlug": "roti-isi-coklat-lumer",
+      "sourceFile": "images/08-image.jpg",
+      "alt": "Roti bun bulat; bagian isi tidak terlihat.",
+      "verified": false,
+      "notes": "Bentuk bun cocok secara umum, tetapi isi cokelat tidak terlihat."
+    },
+    {
+      "productSlug": "roti-smoked-beef",
+      "sourceFile": "images/18-image.jpg",
+      "alt": "Roti bun dengan topping gurih dan taburan hijau.",
+      "verified": false,
+      "notes": "Topping terlihat, tetapi smoked beef dan red cheddar tidak dapat dipastikan dari foto."
+    },
+    {
+      "productSlug": "roti-sosis-keju",
+      "sourceFile": "images/02-image.jpg",
+      "alt": "Roti panjang dengan topping putih.",
+      "verified": false,
+      "notes": "Sosis tidak tampak jelas; foto roti lain mungkin memiliki topping serupa."
+    },
+    {
+      "productSlug": "roti-cinnamon",
+      "sourceFile": "images/32-image.jpg",
+      "alt": "Roti berbentuk lingkaran dengan beberapa bagian berpilin.",
+      "verified": false,
+      "notes": "Bentuk terlihat, tetapi isian atau rasa cinnamon tidak dapat dipastikan."
+    },
+    {
+      "productSlug": "roti-pizza",
+      "sourceFile": "images/04-image.jpg",
+      "alt": "Roti bundar dengan topping menyerupai pizza.",
+      "verified": true,
+      "notes": "Topping dan bentuk pizza terlihat jelas pada foto."
+    },
+    {
+      "productSlug": "roti-keju",
+      "sourceFile": "images/29-image.jpg",
+      "alt": "Roti bun dengan topping hijau dan putih.",
+      "verified": false,
+      "notes": "Topping terlihat, tetapi isi whipped cream dan keju tidak dapat dipastikan."
+    },
+    {
+      "productSlug": "roti-isi-daging-ayam",
+      "sourceFile": "images/28-image.jpg",
+      "alt": "Roti bundar polos; bagian isi tidak terlihat.",
+      "verified": false,
+      "notes": "Isi daging ayam tidak terlihat pada foto."
+    },
+    {
+      "productSlug": "lumsur",
+      "sourceFile": "images/24-image.jpg",
+      "alt": "Dessert hijau dalam cup kecil.",
+      "verified": true,
+      "notes": "Warna dan penyajian dessert terlihat; cocok dengan deskripsi Lumsur berbahan pandan."
+    },
+    {
+      "productSlug": "soes",
+      "sourceFile": "images/35-image.jpg",
+      "alt": "Soes dengan isian krim yang terlihat.",
+      "verified": true,
+      "notes": "Bentuk pastry dan isian krim terlihat pada foto."
+    },
+    {
+      "productSlug": "risol-rogut-keju-frozen",
+      "sourceFile": null,
+      "alt": null,
+      "verified": false,
+      "notes": "Belum ada foto yang dapat diidentifikasi sebagai varian frozen dengan isian rogut keju; perlu konfirmasi pemilik."
+    },
+    {
+      "productSlug": "risol-rogut-keju-matang",
+      "sourceFile": "images/05-image.jpg",
+      "alt": "Beberapa gorengan gulung, satu potong memperlihatkan bagian dalam.",
+      "verified": false,
+      "notes": "Foto memperlihatkan gorengan, tetapi jenis isi rogut keju tidak dapat dipastikan."
+    },
+    {
+      "productSlug": "risol-mayo-frozen",
+      "sourceFile": null,
+      "alt": null,
+      "verified": false,
+      "notes": "Belum ada foto yang dapat diidentifikasi sebagai varian frozen dengan isian mayo; perlu konfirmasi pemilik."
+    },
+    {
+      "productSlug": "risol-mayo-matang",
+      "sourceFile": "images/25-image.jpg",
+      "alt": "Gorengan gulung berwarna keemasan.",
+      "verified": false,
+      "notes": "Bentuk gorengan tidak cukup untuk memastikan varian risol mayo matang."
+    },
+    {
+      "productSlug": "lumpia-ayam-frozen",
+      "sourceFile": "images/10-image.jpg",
+      "alt": "Beberapa gulungan berwarna pucat dalam wadah.",
+      "verified": false,
+      "notes": "Tampilan dapat berupa produk belum digoreng, tetapi isi ayam dan SKU frozen perlu dikonfirmasi."
+    },
+    {
+      "productSlug": "lumpia-ayam-matang",
+      "sourceFile": "images/21-image.jpg",
+      "alt": "Gulungan goreng dan potongan yang memperlihatkan isian.",
+      "verified": false,
+      "notes": "Foto menunjukkan gorengan berisi, tetapi tidak dapat membedakan lumpia ayam dari risoles."
+    }
+  ],
+  "curation": {
+    "hero": {
+      "sourceFile": "images/03-roti-smokedbeef-mamitika.jpg",
+      "alt": "Roti buatan Mamitika di atas rak pendingin.",
+      "verified": true,
+      "notes": "Dipilih untuk hero umum sesuai DESIGN §3; tidak ditautkan sebagai SKU Roti Smoked Beef."
+    },
+    "snackBox": {
+      "sourceFile": "images/06-snackbox-mamitika.jpg",
+      "alt": "Aneka snack box Mamitika dalam kotak kemasan.",
+      "verified": true,
+      "notes": "Isi beberapa kotak terlihat; gunakan crop yang mempertahankan isi kemasan."
+    },
+    "logo": {
+      "sourceFile": "images/14-logo-mamitika.png",
+      "alt": "Logo Mamitika.",
+      "verified": true,
+      "notes": "Dipilih satu salinan; images/15-logo-mamitika.png identik berdasarkan hash SHA-256."
+    },
+    "gallery": [
+      {
+        "sourceFile": "images/06-snackbox-mamitika.jpg",
+        "alt": "Aneka snack box Mamitika dalam kotak kemasan.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box."
+      },
+      {
+        "sourceFile": "images/07-snackbox-mamitika.jpg",
+        "alt": "Susunan snack box Mamitika dengan beberapa pilihan isi.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box; berbeda dari aset duplikat yang ditemukan."
+      },
+      {
+        "sourceFile": "images/13-snackbox-mamitika.jpg",
+        "alt": "Barisan snack box Mamitika untuk pesanan acara.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box."
+      },
+      {
+        "sourceFile": "images/20-snackbox-mamitika.jpg",
+        "alt": "Snack box Mamitika tersusun untuk pesanan.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box."
+      },
+      {
+        "sourceFile": "images/30-snackbox-mamitika.jpg",
+        "alt": "Kotak snack box Mamitika dengan aneka kue.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box."
+      },
+      {
+        "sourceFile": "images/33-snackbox-mamitika.jpg",
+        "alt": "Snack box Mamitika dalam kemasan untuk acara.",
+        "verified": true,
+        "notes": "Foto dokumentasi snack box."
+      }
+    ]
+  },
+  "reviewNotes": [
+    "Harga adalah snapshot catalog.csv dan wajib ditinjau pemilik sebelum publikasi.",
+    "Availability seluruh SKU tetap unconfirmed sampai pemilik menetapkan ready, preorder, atau unavailable.",
+    "Mapping foto berstatus verified=false belum boleh dipakai sebagai foto SKU live; pemilik perlu mengonfirmasi kandidat visualnya."
+  ]
+}
